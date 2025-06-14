@@ -1,0 +1,11 @@
+# Node modules
+node_modules/
+
+# Sass cache
+.sass-cache/
+
+# MacOS garbage
+.DS_Store
+
+# VSC fayllari
+.vscode/
