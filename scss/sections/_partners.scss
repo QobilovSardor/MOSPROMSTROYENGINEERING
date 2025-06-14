@@ -1,0 +1,33 @@
+.partners {
+  padding: 54px 0 77px 0;
+  &-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+  &-card {
+    border: 0.63px solid #07438530;
+    height: 142px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .partner-name {
+      font-weight: 300;
+      font-size: 8.02px;
+      line-height: 100%;
+      text-align: center;
+    }
+    &:first-child {
+      border-top-left-radius: 15px;
+    }
+    &:nth-child(8) {
+      border-top-right-radius: 15px;
+    }
+    &:nth-child(9) {
+      border-bottom-left-radius: 15px;
+    }
+    &:last-child {
+      border-bottom-right-radius: 15px;
+    }
+  }
+}

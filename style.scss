@@ -1,28 +1,22 @@
+
 // 1. Bootstrap o'zgaruvchilarini override qilish
-@import "scss/vendors/bootstrap-custom";
+@import 'scss/vendors/bootstrap-custom';
 
 // 2. Abstrakt qatlamlar: o'zgaruvchilar, mixinlar, funksiyalar
-@import "scss/abstracts/variables";
-@import "scss/abstracts/mixins";
-@import "scss/abstracts/functions"; // agar kerak bo'lsa
+@import 'scss/abstracts/variables';
 
 // 3. Bazaviy (reset, base, tipografiya)
-@import "scss/base/reset";
-@import "scss/base/typography";
-@import "scss/base/base";
+@import 'scss/base/base';
 
 // 4. Layout (bosh tuzilmalar)
-@import "scss/layout/container";
-@import "scss/layout/header";
-@import "scss/layout/footer";
+@import 'scss/layout/footer';
 
-// 5. Kichik komponentlar
-@import "scss/components/buttons";
-@import "scss/components/slider";
-@import "scss/components/card";
 
 // 6. Sahifalar/bo‘limlar (sections)
-@import "scss/sections/hero";       // birinchi slayd, 100vh
-@import "scss/sections/projects";
-@import "scss/sections/about-company";
-@import "scss/sections/we-build";
+@import 'scss/sections/hero';
+@import 'scss/sections/projects';
+@import 'scss/sections/about-company';
+@import 'scss/sections/we-build';
+@import 'scss/sections/partners';
+@import 'scss/sections/build';
+@import 'scss/base/media';

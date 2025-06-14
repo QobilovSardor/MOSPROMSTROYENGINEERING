@@ -10,10 +10,10 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "bootstrap": "^5.3.6"
-  },
   "devDependencies": {
     "sass": "^1.89.2"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3"
   }
 }
