@@ -1,0 +1,6 @@
+// Bootstrap'ning default o‘zgaruvchilarini o'zgartirish
+$primary: #222222;
+$font-family-base: 'HelveticaNeueCyr', sans-serif;
+$border-radius: 10px;
+
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';

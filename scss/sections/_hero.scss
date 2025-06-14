@@ -1,0 +1,115 @@
+.hero-section {
+  padding-top: 32px;
+  position: relative;
+  min-height: 100vh;
+  background: url('../../assets/images/intro-bg.png') center/cover no-repeat;
+  color: white;
+  z-index: 1;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #19191994;
+    z-index: -1;
+  }
+  .hero-logo {
+    width: 60px;
+    height: 40px;
+  }
+  .logo-box {
+    gap: 10px;
+    font-family: $font-primary;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: -6%;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+  .hero-nav {
+    a {
+      color: white;
+      font-size: 12px;
+      font-weight: 400;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    transform: scale(1.25);
+    transform-origin: top right;
+  }
+
+  .hero-content {
+    padding-bottom: 67px;
+
+    .hero-title {
+      font-family: $font-primary;
+      font-weight: 400;
+      font-size: 40px;
+      line-height: 120%;
+      text-transform: uppercase;
+      max-width: 771px;
+    }
+
+    .hero-cards {
+      margin-top: 25px;
+      display: grid;
+      grid-template-columns: 234px 236px 309px;
+      gap: 15px;
+      .hero-card {
+        padding: 15px;
+        border-radius: 15px;
+        backdrop-filter: blur(7.300000190734863px);
+        background: #a8a8a84f;
+        &__logo {
+          border: 1px solid #fff;
+          width: 22px;
+          height: 22px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 4.55px;
+          margin-bottom: 37px;
+        }
+
+        p {
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 100%;
+        }
+      }
+    }
+
+    .btn {
+      font-family: $font-graphik;
+      font-weight: 400;
+      font-size: 13.44px;
+      line-height: 100%;
+      color: #fff;
+      padding: 12px 18px;
+      border-radius: 100px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      width: fit-content;
+      path {
+        transition: all .2s linear;
+      }
+      &:hover {
+        color: #000;
+        path {
+          stroke: #000;
+        }
+      }
+    }
+  }
+  .bottom-box {
+    gap: 40px;
+  }
+}

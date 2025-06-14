@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+ol {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+
+body {
+  font-weight: 400;
+  font-family: var(--bs-body-font-family);
+}
+.container-fluid {
+  padding-left: 33px;
+  padding-right: 33px;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+.title {
+  text-align: center;
+  font-family: $font-primary;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 120%;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 42px;
+}
