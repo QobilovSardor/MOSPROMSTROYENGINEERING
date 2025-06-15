@@ -12061,8 +12061,17 @@ body {
 .hero-section .hero-content .btn:hover path {
   stroke: #000;
 }
-.hero-section .bottom-box {
-  gap: 40px;
+.hero-section .bottom-box__info {
+  margin: 30px 0 40px 0;
+  gap: 17px;
+  padding-left: 15px;
+}
+.hero-section .bottom-box__info li {
+  font-weight: 300;
+  list-style: disc;
+  font-size: 16px;
+  line-height: 100%;
+  color: #fff;
 }
 
 .navbar-toggler {
