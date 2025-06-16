@@ -29,7 +29,12 @@
           <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
             aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon d-block"></span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+              class="bi bi-x navbar-toggler-icon-2 d-none" viewBox="0 0 16 16">
+              <path
+                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+            </svg>
           </button>
         </div>
         <nav class="hero-nav d-md-flex gap-4 collapse" id="navbarNavAltMarkup">
@@ -43,7 +48,7 @@
       </div>
       <div class="container-fluid hero-content text-white">
         <h1 class="hero-title">
-         30 лет в роли генерального подрядчика И НАДЕЖНОГО ПАРТНЕРА
+          30 лет в роли генерального подрядчика И НАДЕЖНОГО ПАРТНЕРА
         </h1>
 
         <div class="bottom-box">
@@ -324,7 +329,29 @@
     </footer>
   </div>
 
+  <div class="overlay"></div>
 
+  <script>
+    const navbarToggler = document.querySelector('.navbar-toggler');
+    const menuIcon = document.querySelector(".navbar-toggler-icon");
+    const menuIcon2 = document.querySelector(".navbar-toggler-icon-2");
+    const nav = document.querySelector('.hero-nav');
+
+    navbarToggler.addEventListener("click", () => {
+      menuIcon2.classList.toggle('d-block'); menuIcon2.classList.toggle('d-none')
+      menuIcon.classList.toggle('d-block'); menuIcon.classList.toggle('d-none')
+    })
+    document.addEventListener('click', (e) => {
+      if (!nav.contains(e.target) && !navbarToggler.contains(e.target)) {
+        nav.classList.remove('show');
+
+        menuIcon.classList.add('d-block');
+        menuIcon.classList.remove('d-none');
+        menuIcon2.classList.remove('d-block');
+        menuIcon2.classList.add('d-none');
+      }
+    });
+  </script>
   <script type="module" src="assets/js/main.js"></script>
 </body>
 
